@@ -25,5 +25,6 @@ before_build:
 - cmd: nuget restore
 
 build:
+  project: NFive.SDK.Core.sln
   verbosity: minimal
   publish_nuget: true
