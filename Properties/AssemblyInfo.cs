@@ -1,11 +1,11 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("NFive SDK Core")]
+[assembly: AssemblyTitle("NFive Core SDK")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("NFive")]
-[assembly: AssemblyProduct("NFive SDK Core")]
+[assembly: AssemblyProduct("NFive SDK")]
 [assembly: AssemblyCopyright("Copyright © NFive 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

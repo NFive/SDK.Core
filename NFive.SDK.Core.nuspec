@@ -4,10 +4,11 @@
 		<id>NFive.SDK.Core</id>
 		<version>$version$</version>
 		<authors>NFive</authors>
+		<owners>NFive</owners>
 		<licenseUrl>https://github.com/NFive/SDK.Core/blob/master/LICENSE</licenseUrl>
 		<projectUrl>https://github.com/NFive/SDK.Core</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<description>NFive SDK Core</description>
+		<description>NFive Core SDK</description>
 		<copyright>Copyright NFive 2018</copyright>
 		<tags>nfive fivem</tags>
 		<dependencies>
