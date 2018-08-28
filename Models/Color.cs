@@ -11,6 +11,5 @@ namespace NFive.SDK.Core.Models
 		public byte? A { get; set; }
 
 		public Color() { }
-
 	}
 }

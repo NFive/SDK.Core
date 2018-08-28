@@ -1,21 +1,18 @@
-<?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>NFive.SDK.Core</id>
-		<version>1.0.0</version>
-		<title>NFive.SDK.Core</title>
+		<version>$version$</version>
 		<authors>NFive</authors>
-		<owners>NFive</owners>
-		<licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
+		<licenseUrl>https://github.com/NFive/SDK.Core/blob/master/LICENSE</licenseUrl>
 		<projectUrl>https://github.com/NFive/SDK.Core</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<description>NFive SDK core.</description>
-		<releaseNotes>Initial release.</releaseNotes>
+		<description>NFive SDK Core</description>
 		<copyright>Copyright NFive 2018</copyright>
-		<tags></tags>
+		<tags>nfive fivem</tags>
 		<dependencies>
-      <dependency id="Newtonsoft.Json" version="[11.0.2, ]" />
-	  </dependencies>
+			<dependency id="Newtonsoft.Json" version="[11.0.2, ]" />
+		</dependencies>
 	</metadata>
 	<files>
 		<file src="bin\Release\NFive.SDK.Core.net.dll" target="lib\net452\NFive.SDK.Core.net.dll" />

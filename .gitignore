@@ -1,4 +1,4 @@
 .vs/
-packages/
-obj/
 bin/
+obj/
+packages/
