@@ -32,6 +32,9 @@ namespace NFive.SDK.Core.Models.Player
 		[JsonIgnore]
 		public virtual User User { get; set; }
 
+		[JsonIgnore]
+		public bool IsConnected => !this.Disconnected.HasValue;
+
 		public Session()
 		{
 			this.Connected = DateTime.UtcNow;
