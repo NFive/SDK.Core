@@ -3,5 +3,8 @@
 namespace NFive.SDK.Core.Controllers
 {
 	[PublicAPI]
-	public interface IControllerConfiguration { }
+	public interface IControllerConfiguration
+	{
+		string FileName { get; }
+	}
 }
