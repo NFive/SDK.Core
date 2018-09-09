@@ -18,7 +18,7 @@ namespace NFive.SDK.Core.Models.Player
 		public string IpAddress { get; set; }
 
 		[Required]
-		public DateTime Created { get; set; }
+		public DateTime Created { get; set; } = DateTime.UtcNow;
 
 		public DateTime? Connected { get; set; }
 
@@ -36,10 +36,5 @@ namespace NFive.SDK.Core.Models.Player
 
 		[JsonIgnore]
 		public bool IsConnected => !this.Disconnected.HasValue;
-
-		public Session()
-		{
-			this.Connected = DateTime.UtcNow;
-		}
 	}
 }
