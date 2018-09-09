@@ -18,10 +18,10 @@ namespace NFive.SDK.Core.Models.Player
 		public string IpAddress { get; set; }
 
 		[Required]
-		public DateTime Connected { get; set; }
+		public DateTime Created { get; set; }
 
 		[Required]
-		public bool IsInitialized { get; set; }
+		public DateTime Connected { get; set; }
 
 		public DateTime? Disconnected { get; set; }
 
