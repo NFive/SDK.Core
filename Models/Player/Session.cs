@@ -20,8 +20,7 @@ namespace NFive.SDK.Core.Models.Player
 		[Required]
 		public DateTime Created { get; set; }
 
-		[Required]
-		public DateTime Connected { get; set; }
+		public DateTime? Connected { get; set; }
 
 		public DateTime? Disconnected { get; set; }
 
