@@ -13,7 +13,7 @@ namespace NFive.SDK.Core.Models.Player
 		[StringLength(40, MinimumLength = 40)] // TODO: Confirm
 		public string License { get; set; }
 
-		public long SteamId { get; set; }
+		public long? SteamId { get; set; }
 
 		[Required]
 		[StringLength(32, MinimumLength = 1)] // TODO: Confirm
