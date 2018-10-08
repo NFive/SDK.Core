@@ -10,13 +10,14 @@ namespace NFive.SDK.Core.Models.Player
 	public class User : IdentityModel
 	{
 		[Required]
+		[StringLength(40, MinimumLength = 40)] // TODO: Confirm
+		public string License { get; set; }
+
 		public long SteamId { get; set; }
 
 		[Required]
 		[StringLength(32, MinimumLength = 1)] // TODO: Confirm
 		public string Name { get; set; }
-
-		public DateTime? AcceptedRules { get; set; }
 
 		[InverseProperty("User")]
 		public virtual List<Session> Sessions { get; set; }
