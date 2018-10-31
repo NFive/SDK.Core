@@ -64,6 +64,13 @@
     <Compile Include="Models\Player\User.cs" />
     <Compile Include="Models\Position.cs" />
     <Compile Include="PluginAttribute.cs" />
+    <Compile Include="Plugins\Client.cs" />
+    <Compile Include="Plugins\Plugin.cs" />
+    <Compile Include="Plugins\Name.cs" />
+    <Compile Include="Plugins\Repository.cs" />
+    <Compile Include="Plugins\Server.cs" />
+    <Compile Include="Plugins\Version.cs" />
+    <Compile Include="Plugins\VersionRange.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rpc\RpcEvents.cs" />
     <Compile Include="Rpc\Serializer.cs" />
