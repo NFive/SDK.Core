@@ -1,5 +1,8 @@
-﻿namespace NFive.SDK.Core.Diagnostics
+﻿using JetBrains.Annotations;
+
+namespace NFive.SDK.Core.Diagnostics
 {
+	[PublicAPI]
 	public enum LogLevel
 	{
 		Debug,

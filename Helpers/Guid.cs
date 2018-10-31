@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Security.Cryptography;
+using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Helpers
 {
+	[PublicAPI]
 	public static class GuidGenerator
 	{
 		public static Guid GenerateTimeBasedGuid()

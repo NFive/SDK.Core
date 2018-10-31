@@ -1,7 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Models
 {
+	[PublicAPI]
 	[ComplexType]
 	public class Color
 	{
