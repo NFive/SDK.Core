@@ -5,7 +5,5 @@
 		public const string ClientInitialize = "nfive:core:clientInitialize";
 		public const string ClientInitialized = "nfive:core:clientInitialized";
 		public const string ClientPlugins = "nfive:core:clientPlugins";
-
-		public const string ServerInitialized = "nfive:core:serverInitialized";
 	}
 }
