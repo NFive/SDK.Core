@@ -1,39 +1,69 @@
 ﻿using System;
-using JetBrains.Annotations;
 using Newtonsoft.Json;
 
 namespace NFive.SDK.Core.Plugins
 {
-	[PublicAPI]
+	/// <summary>
+	/// A plugin name, including the vendor and project.
+	/// </summary>
+	[Serializable]
 	public class Name
 	{
+		/// <summary>
+		/// Gets or sets the plugin name vendor.
+		/// </summary>
+		/// <value>
+		/// The plugin name vendor.
+		/// </value>
 		public string Vendor { get; set; }
 
+		/// <summary>
+		/// Gets or sets the plugin name project.
+		/// </summary>
+		/// <value>
+		/// The plugin name project.
+		/// </value>
 		public string Project { get; set; }
 
+		/// <summary>
+		/// Initializes a new instance of the <see cref="Name"/> class.
+		/// </summary>
 		[JsonConstructor]
 		public Name() { }
 
+		/// <summary>
+		/// Initializes a new instance of the <see cref="Name"/> class from a name string.
+		/// </summary>
+		/// <param name="value">The plugin name string.</param>
+		/// <exception cref="ArgumentNullException">Plugin name must be in \"vendor/project\" format.</exception>
+		/// <exception cref="ArgumentException">Invalid plugin name format, plugin name must be in \"vendor/project\" format.</exception>
 		public Name(string value)
 		{
-			if (string.IsNullOrWhiteSpace(value)) throw new ArgumentNullException(nameof(value));
+			if (string.IsNullOrWhiteSpace(value)) throw new ArgumentNullException(nameof(value), "Plugin name must be in \"vendor/project\" format.");
 
 			var parts = value.Split('/');
 
-			if (parts.Length != 2) throw new ArgumentException("Invalid plugin name format", nameof(value));
+			if (parts.Length != 2) throw new ArgumentException("Invalid plugin name format, plugin name must be in \"vendor/project\" format.", nameof(value));
 
 			this.Vendor = parts[0];
 			this.Project = parts[1];
 		}
 
-		/// <summary>Returns a string that represents the current object.</summary>
-		/// <returns>A string that represents the current object.</returns>
+		/// <summary>
+		/// Returns a formatted <see cref="string" /> that represents this plugin name.
+		/// </summary>
+		/// <returns>
+		/// A formatted <see cref="string" /> that represents this plugin name.
+		/// </returns>
 		public override string ToString() => $"{this.Vendor}/{this.Project}";
 
-		/// <summary>Determines whether the specified object is equal to the current object.</summary>
-		/// <param name="obj">The object to compare with the current object. </param>
+		/// <summary>
+		/// Determines whether the specified <see cref="object" />, is equal to this instance.
+		/// </summary>
+		/// <param name="obj">The <see cref="object" /> to compare with this instance.</param>
 		/// <returns>
-		/// <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
+		///   <c>true</c> if the specified <see cref="object" /> is equal to this instance; otherwise, <c>false</c>.
+		/// </returns>
 		public override bool Equals(object obj)
 		{
 			if (!(obj is Name item)) return false;
@@ -41,13 +71,18 @@ namespace NFive.SDK.Core.Plugins
 			return ToString().Equals(item.ToString());
 		}
 
-		/// <summary>Serves as the default hash function. </summary>
-		/// <returns>A hash code for the current object.</returns>
+		/// <summary>
+		/// Returns a hash code for this instance.
+		/// </summary>
+		/// <returns>
+		/// A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+		/// </returns>
 		public override int GetHashCode() => ToString().GetHashCode();
 
 		public static bool operator ==(Name a, Name b)
 		{
 			if (a is null) return b is null;
+
 			return a.Equals(b);
 		}
 

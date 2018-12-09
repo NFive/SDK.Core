@@ -1,9 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Plugins
 {
 	[PublicAPI]
+	[Serializable]
 	public class Plugin
 	{
 		public Name Name { get; set; }

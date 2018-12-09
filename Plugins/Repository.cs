@@ -1,8 +1,10 @@
-﻿using JetBrains.Annotations;
+﻿using System;
+using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Plugins
 {
 	[PublicAPI]
+	[Serializable]
 	public class Repository
 	{
 		public Name Name { get; set; }
