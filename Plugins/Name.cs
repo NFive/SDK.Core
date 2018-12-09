@@ -38,12 +38,12 @@ namespace NFive.SDK.Core.Plugins
 		{
 			if (!(obj is Name item)) return false;
 
-			return this.ToString().Equals(item.ToString());
+			return ToString().Equals(item.ToString());
 		}
 
 		/// <summary>Serves as the default hash function. </summary>
 		/// <returns>A hash code for the current object.</returns>
-		public override int GetHashCode() => this.ToString().GetHashCode();
+		public override int GetHashCode() => ToString().GetHashCode();
 
 		public static bool operator ==(Name a, Name b)
 		{

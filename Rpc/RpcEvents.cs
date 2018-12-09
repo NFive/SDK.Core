@@ -1,5 +1,8 @@
-﻿namespace NFive.SDK.Core.Rpc
+﻿using JetBrains.Annotations;
+
+namespace NFive.SDK.Core.Rpc
 {
+	[PublicAPI]
 	public static class RpcEvents
 	{
 		public const string ClientInitialize = "nfive:core:clientInitialize";
