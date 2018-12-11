@@ -1,5 +1,5 @@
-﻿using System;
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
+using System;
 
 namespace NFive.SDK.Core
 {
@@ -15,10 +15,10 @@ namespace NFive.SDK.Core
 		/// Gets the target SDK version number.
 		/// </summary>
 		public uint Target { get; }
-		
+
 		/// <inheritdoc />
 		/// <summary>
-		/// Initializes a new instance of the <see cref="T:NFive.SDK.Core.PluginAttribute" /> class.
+		/// Initializes a new instance of the <see cref="PluginAttribute" /> class.
 		/// </summary>
 		/// <param name="target">The target SDK version number.</param>
 		public PluginAttribute(uint target)
