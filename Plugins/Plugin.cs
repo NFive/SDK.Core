@@ -70,12 +70,36 @@ namespace NFive.SDK.Core.Plugins
 		/// </value>
 		public string Website { get; set; }
 
+		/// <summary>
+		/// Gets or sets the server requirements.
+		/// </summary>
+		/// <value>
+		/// The server requirements.
+		/// </value>
 		public Server Server { get; set; }
 
+		/// <summary>
+		/// Gets or sets the client requirements.
+		/// </summary>
+		/// <value>
+		/// The client requirements.
+		/// </value>
 		public Client Client { get; set; }
 
+		/// <summary>
+		/// Gets or sets the dependencies required by this plugin.
+		/// </summary>
+		/// <value>
+		/// The dependencies required by this plugin.
+		/// </value>
 		public Dictionary<Name, VersionRange> Dependencies { get; set; }
 
+		/// <summary>
+		/// Gets or sets the repositories used to locate dependencies.
+		/// </summary>
+		/// <value>
+		/// The repositories used to locate dependencies.
+		/// </value>
 		public List<Repository> Repositories { get; set; }
 
 		/// <summary>

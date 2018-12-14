@@ -64,11 +64,25 @@ namespace NFive.SDK.Core.Models
 		/// </returns>
 		public override string ToString() => $"X: {this.X}, Y: {this.Y}, Z: {this.Z}";
 
-		protected bool Equals(Position other)
+		/// <summary>
+		/// Determines whether the specified <see cref="Position" />, is equal to this instance.
+		/// </summary>
+		/// <param name="pos">The <see cref="Position" /> to compare with this instance.</param>
+		/// <returns>
+		///   <c>true</c> if the specified <see cref="Position" /> is equal to this instance; otherwise, <c>false</c>.
+		/// </returns>
+		protected bool Equals(Position pos)
 		{
-			return this.X.Equals(other.X) && this.Y.Equals(other.Y) && this.Z.Equals(other.Z);
+			return this.X.Equals(pos.X) && this.Y.Equals(pos.Y) && this.Z.Equals(pos.Z);
 		}
 
+		/// <summary>
+		/// Determines whether the specified <see cref="object" />, is equal to this instance.
+		/// </summary>
+		/// <param name="obj">The <see cref="object" /> to compare with this instance.</param>
+		/// <returns>
+		///   <c>true</c> if the specified <see cref="object" /> is equal to this instance; otherwise, <c>false</c>.
+		/// </returns>
 		public override bool Equals(object obj)
 		{
 			if (ReferenceEquals(null, obj)) return false;
@@ -76,23 +90,26 @@ namespace NFive.SDK.Core.Models
 			return obj.GetType() == GetType() && Equals((Position) obj);
 		}
 
-		public override int GetHashCode()
-		{
-			unchecked
-			{
-				var hashCode = this.X.GetHashCode();
-				hashCode = (hashCode * 397) ^ this.Y.GetHashCode();
-				hashCode = (hashCode * 397) ^ this.Z.GetHashCode();
-				return hashCode;
-			}
-		}
+		/// <summary>
+		/// Returns a hash code for this instance.
+		/// </summary>
+		/// <returns>
+		/// A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+		/// </returns>
+		public override int GetHashCode() => ToString().GetHashCode();
 
+		/// <summary>This method determines whether two Positions have the same value.</summary>
+		/// <seealso cref="operator!="/>
+		/// <seealso cref="Equals"/>
 		public static bool operator ==(Position a, Position b)
 		{
 			if ((object)a == null) return (object)b == null;
 			return a.Equals(b);
 		}
 
+		/// <summary>This method determines whether two Positions do not have the same value.</summary>
+		/// <seealso cref="operator=="/>
+		/// <seealso cref="Equals"/>
 		public static bool operator !=(Position a, Position b)
 		{
 			return !(a == b);

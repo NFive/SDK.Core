@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Models.Player
@@ -11,6 +12,7 @@ namespace NFive.SDK.Core.Models.Player
 	/// </summary>
 	/// <seealso cref="IdentityModel" />
 	[PublicAPI]
+	[SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
 	public class User : IdentityModel
 	{
 		/// <summary>

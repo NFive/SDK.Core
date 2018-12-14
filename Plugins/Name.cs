@@ -1,4 +1,5 @@
 ﻿using System;
+using JetBrains.Annotations;
 using Newtonsoft.Json;
 
 namespace NFive.SDK.Core.Plugins
@@ -7,6 +8,7 @@ namespace NFive.SDK.Core.Plugins
 	/// Represents a plugin name, composed of the vendor and project.
 	/// </summary>
 	[Serializable]
+	[PublicAPI]
 	public class Name
 	{
 		/// <summary>
@@ -79,6 +81,9 @@ namespace NFive.SDK.Core.Plugins
 		/// </returns>
 		public override int GetHashCode() => ToString().GetHashCode();
 
+		/// <summary>This method determines whether two Names have the same value.</summary>
+		/// <seealso cref="operator!="/>
+		/// <seealso cref="Equals"/>
 		public static bool operator ==(Name a, Name b)
 		{
 			if (a is null) return b is null;
@@ -86,10 +91,27 @@ namespace NFive.SDK.Core.Plugins
 			return a.Equals(b);
 		}
 
+		/// <summary>This method determines whether two Names do not have the same value.</summary>
+		/// <seealso cref="operator=="/>
+		/// <seealso cref="Equals"/>
 		public static bool operator !=(Name a, Name b) => !(a == b);
 
+		/// <summary>
+		/// Performs an implicit conversion from <see cref="string"/> to <see cref="Name"/>.
+		/// </summary>
+		/// <param name="value">The string to convert.</param>
+		/// <returns>
+		/// The result of the conversion.
+		/// </returns>
 		public static implicit operator Name(string value) => new Name(value);
 
+		/// <summary>
+		/// Performs an implicit conversion from <see cref="Name"/> to <see cref="string"/>.
+		/// </summary>
+		/// <param name="value">The value to convert.</param>
+		/// <returns>
+		/// The result of the conversion.
+		/// </returns>
 		public static implicit operator string(Name value) => value.ToString();
 	}
 }

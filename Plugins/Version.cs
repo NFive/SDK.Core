@@ -1,4 +1,5 @@
 ﻿using System;
+using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Plugins
 {
@@ -6,6 +7,7 @@ namespace NFive.SDK.Core.Plugins
 	/// Represents a semantic version number.
 	/// </summary>
 	[Serializable]
+	[PublicAPI]
 	public class Version
 	{
 		/// <summary>
