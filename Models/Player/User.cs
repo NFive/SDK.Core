@@ -5,6 +5,7 @@ using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Models.Player
 {
+	/// <inheritdoc />
 	/// <summary>
 	/// User model representing the player on the server.
 	/// </summary>

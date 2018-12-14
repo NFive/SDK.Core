@@ -3,7 +3,7 @@
 namespace NFive.SDK.Core.Plugins
 {
 	/// <summary>
-	/// A semantic version range.
+	/// Represents a semantic version range.
 	/// </summary>
 	[Serializable]
 	public class VersionRange
@@ -22,9 +22,6 @@ namespace NFive.SDK.Core.Plugins
 		/// <returns>
 		/// A <see cref="string" /> that represents this version range.
 		/// </returns>
-		public override string ToString()
-		{
-			return this.Value;
-		}
+		public override string ToString() => this.Value;
 	}
 }

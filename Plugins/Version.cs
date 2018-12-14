@@ -3,7 +3,7 @@
 namespace NFive.SDK.Core.Plugins
 {
 	/// <summary>
-	/// A semantic version number.
+	/// Represents a semantic version number.
 	/// </summary>
 	[Serializable]
 	public class Version

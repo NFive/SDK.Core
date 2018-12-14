@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace NFive.SDK.Core.Plugins
 {
 	/// <summary>
-	/// A plugin name, including the vendor and project.
+	/// Represents a plugin name, composed of the vendor and project.
 	/// </summary>
 	[Serializable]
 	public class Name
