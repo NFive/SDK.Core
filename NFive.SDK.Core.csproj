@@ -53,9 +53,7 @@
     <Compile Include="Controllers\IControllerConfiguration.cs" />
     <Compile Include="Diagnostics\ILogger.cs" />
     <Compile Include="Diagnostics\LogLevel.cs" />
-    <Compile Include="Exceptions\GroupException.cs" />
-    <Compile Include="Exceptions\ModelException.cs" />
-    <Compile Include="Helpers\Guid.cs" />
+    <Compile Include="Helpers\GuidGenerator.cs" />
     <Compile Include="Models\Audio\RadioStation.cs" />
     <Compile Include="Models\Color.cs" />
     <Compile Include="Models\IdentityModel.cs" />
