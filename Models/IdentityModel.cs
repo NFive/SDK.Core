@@ -36,7 +36,6 @@ namespace NFive.SDK.Core.Models
 		/// <value>
 		/// The timestamp of when the model was deleted.
 		/// </value>
-		[Required]
 		public DateTime? Deleted { get; set; }
 
 		/// <summary>
