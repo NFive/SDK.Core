@@ -49,10 +49,18 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arguments\Argument.cs" />
+    <Compile Include="Arguments\OptionAttribute.cs" />
+    <Compile Include="Arguments\OptionSpecification.cs" />
+    <Compile Include="Arguments\Specification.cs" />
+    <Compile Include="Arguments\SpecificationType.cs" />
+    <Compile Include="Arguments\ValueAttribute.cs" />
+    <Compile Include="Arguments\ValueSpecification.cs" />
     <Compile Include="Controllers\ControllerConfiguration.cs" />
     <Compile Include="Controllers\IControllerConfiguration.cs" />
     <Compile Include="Diagnostics\ILogger.cs" />
     <Compile Include="Diagnostics\LogLevel.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
     <Compile Include="Extensions\NumericExtensions.cs" />
     <Compile Include="Extensions\PositionExtensions.cs" />
     <Compile Include="Helpers\GuidGenerator.cs" />
