@@ -56,6 +56,7 @@
     <Compile Include="Arguments\SpecificationType.cs" />
     <Compile Include="Arguments\ValueAttribute.cs" />
     <Compile Include="Arguments\ValueSpecification.cs" />
+    <Compile Include="Chat\ChatMessage.cs" />
     <Compile Include="Chat\IChatMessage.cs" />
     <Compile Include="Controllers\ControllerConfiguration.cs" />
     <Compile Include="Controllers\IControllerConfiguration.cs" />
