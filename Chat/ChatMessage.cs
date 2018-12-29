@@ -11,7 +11,7 @@ namespace NFive.SDK.Core.Chat
 		public Guid Id { get; set; }
 		public User Sender { get; set; }
 		public string Content { get; set; }
-		[CanBeNull] public User Target { get; set; }
+		public User Target { get; set; }
 
 		public ChatMessage()
 		{

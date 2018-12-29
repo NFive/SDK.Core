@@ -15,6 +15,7 @@ namespace NFive.SDK.Core.Arguments
         /// </summary>
         public bool Required { get; set; }
 
+        /// <inheritdoc />
         /// <summary>
         /// Initializes a new instance of the <see cref="ValueAttribute"/> class.
         /// </summary>
