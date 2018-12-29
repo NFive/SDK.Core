@@ -48,24 +48,11 @@ namespace NFive.SDK.Core.Arguments
 
 				if (arg.Processed) continue;
 
-				if (arg.Data.StartsWith("--"))
-				{
-					var option = options.SingleOrDefault(o => o.LongName.ToLower() == arg.Data.Substring(2));
-
-					if (option != default(OptionSpecification))
-					{
-						var next = parsedArgs[i + 1];
-						option.Property.SetValue(res, next.Data);
-
-						arg.Processed = true;
-						next.Processed = true;
-						continue;
-					}
-				}
-
 				if (arg.Data.StartsWith("-"))
 				{
-					var option = options.SingleOrDefault(o => o.ShortName.ToLower() == arg.Data.Substring(1));
+					var option = arg.Data.StartsWith("--")
+						? options.SingleOrDefault(o => o.LongName.ToLower() == arg.Data.Substring(2))
+						: options.SingleOrDefault(o => o.ShortName.ToLower() == arg.Data.Substring(1));
 
 					if (option != default(OptionSpecification))
 					{
@@ -80,8 +67,8 @@ namespace NFive.SDK.Core.Arguments
 
 				if (values.Count - 1 < valuePos) throw new Exception("Unable to match all arguments to properties.");
 
-				var pi = values[valuePos++].Property;
-				pi.SetValue(res, Convert.ChangeType(arg.Data, pi.PropertyType));
+				var property = values[valuePos++].Property;
+				property.SetValue(res, Convert.ChangeType(arg.Data, property.PropertyType));
 
 				arg.Processed = true;
 			}
