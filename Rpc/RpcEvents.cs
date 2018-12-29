@@ -22,5 +22,10 @@ namespace NFive.SDK.Core.Rpc
 		/// The client plugins event which is fired after client initialization to request plugin information.
 		/// </summary>
 		public const string ClientPlugins = "nfive:core:clientPlugins";
+
+		/// <summary>
+		/// The event which is fired when a new message is sent from a client.
+		/// </summary>
+		public const string ChatSendMessage = "nfive:core:chat:sendmessage";
 	}
 }
