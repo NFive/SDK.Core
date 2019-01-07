@@ -1,6 +1,6 @@
-﻿using System;
-using System.Security.Cryptography;
 using JetBrains.Annotations;
+using System;
+using System.Security.Cryptography;
 
 namespace NFive.SDK.Core.Helpers
 {
@@ -8,7 +8,7 @@ namespace NFive.SDK.Core.Helpers
 	/// Utility for generating MySQL optimized globally unique identifiers.
 	/// </summary>
 	/// TODO: Fully test and verify this helps performance.
- 	[PublicAPI]
+	[PublicAPI]
 	public static class GuidGenerator
 	{
 		/// <summary>

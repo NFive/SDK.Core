@@ -1,7 +1,7 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
 using JetBrains.Annotations;
 using NFive.SDK.Core.Helpers;
+using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace NFive.SDK.Core.Models
 {

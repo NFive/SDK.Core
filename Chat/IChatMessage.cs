@@ -1,6 +1,6 @@
-﻿using System;
 using JetBrains.Annotations;
 using NFive.SDK.Core.Models.Player;
+using System;
 
 namespace NFive.SDK.Core.Chat
 {

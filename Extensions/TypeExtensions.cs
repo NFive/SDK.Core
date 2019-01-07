@@ -1,8 +1,8 @@
-﻿using System;
+using NFive.SDK.Core.Arguments;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using NFive.SDK.Core.Arguments;
 
 namespace NFive.SDK.Core.Extensions
 {
@@ -16,6 +16,8 @@ namespace NFive.SDK.Core.Extensions
 			yield return type;
 
 			foreach (var @interface in type.SafeGetInterfaces()) yield return @interface;
+
+			// ReSharper disable once TailRecursiveCall
 			foreach (var @interface in FlattenHierarchy(type.GetTypeInfo().BaseType)) yield return @interface;
 		}
 

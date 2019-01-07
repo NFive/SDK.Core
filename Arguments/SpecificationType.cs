@@ -1,8 +1,8 @@
-﻿namespace NFive.SDK.Core.Arguments
+namespace NFive.SDK.Core.Arguments
 {
-    public enum SpecificationType
-    {
-        Option,
-        Value
-    }
+	public enum SpecificationType
+	{
+		Option,
+		Value
+	}
 }

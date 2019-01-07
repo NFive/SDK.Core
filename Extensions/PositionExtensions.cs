@@ -1,8 +1,10 @@
-﻿using System;
+using JetBrains.Annotations;
 using NFive.SDK.Core.Models;
+using System;
 
 namespace NFive.SDK.Core.Extensions
 {
+	[PublicAPI]
 	public static class PositionExtensions
 	{
 		public static Position TranslateDir(this Position pos, float angleInDegrees, float distance) =>

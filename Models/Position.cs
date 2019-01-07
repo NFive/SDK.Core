@@ -1,6 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using JetBrains.Annotations;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NFive.SDK.Core.Models
 {
@@ -87,7 +87,7 @@ namespace NFive.SDK.Core.Models
 		{
 			if (ReferenceEquals(null, obj)) return false;
 			if (ReferenceEquals(this, obj)) return true;
-			return obj.GetType() == GetType() && Equals((Position) obj);
+			return obj.GetType() == GetType() && Equals((Position)obj);
 		}
 
 		/// <summary>

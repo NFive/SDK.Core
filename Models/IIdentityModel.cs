@@ -1,10 +1,12 @@
-﻿using System;
+using JetBrains.Annotations;
+using System;
 
 namespace NFive.SDK.Core.Models
 {
 	/// <summary>
 	/// Represents the key properties for a stored model.
 	/// </summary>
+	[PublicAPI]
 	public interface IIdentityModel
 	{
 		/// <summary>
