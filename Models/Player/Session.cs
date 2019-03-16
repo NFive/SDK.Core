@@ -88,6 +88,14 @@ namespace NFive.SDK.Core.Models.Player
 		public virtual User User { get; set; }
 
 		/// <summary>
+		/// Gets or sets the handle of the connected client.
+		/// </summary>
+		/// <value>
+		/// The handle of the connected client.
+		/// </value>
+		public int Handle { get; set; }
+
+		/// <summary>
 		/// Gets a value indicating whether a client is currently connected.
 		/// </summary>
 		/// <value>
