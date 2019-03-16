@@ -93,7 +93,7 @@ namespace NFive.SDK.Core.Models.Player
 		/// <value>
 		/// The handle of the connected client.
 		/// </value>
-		public int Handle { get; set; }
+		public int? Handle { get; set; }
 
 		/// <summary>
 		/// Gets a value indicating whether a client is currently connected.
