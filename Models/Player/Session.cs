@@ -69,6 +69,14 @@ namespace NFive.SDK.Core.Models.Player
 		public string DisconnectReason { get; set; }
 
 		/// <summary>
+		/// Gets or sets the handle of the connected client.
+		/// </summary>
+		/// <value>
+		/// The handle of the connected client.
+		/// </value>
+		public int Handle { get; set; }
+
+		/// <summary>
 		/// Gets or sets the user identifier.
 		/// </summary>
 		/// <value>
