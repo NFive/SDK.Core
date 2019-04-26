@@ -74,6 +74,7 @@ namespace NFive.SDK.Core.Models.Player
 		/// <value>
 		/// The handle of the connected client.
 		/// </value>
+		[NotMapped]
 		public int Handle { get; set; }
 
 		/// <summary>
