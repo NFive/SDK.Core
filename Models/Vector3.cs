@@ -1,34 +1,9 @@
-using JetBrains.Annotations;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NFive.SDK.Core.Models
 {
-	/// <summary>
-	/// Represents a position in 3D space.
-	/// </summary>
-	[PublicAPI]
-	[ComplexType]
-	public class Position
+	public class Vector3 : Vector2
 	{
-		/// <summary>
-		/// Gets or sets the position on the X axis.
-		/// </summary>
-		/// <value>
-		/// The position on the X axis.
-		/// </value>
-		[Required]
-		public float X { get; set; }
-
-		/// <summary>
-		/// Gets or sets the position on the Y axis.
-		/// </summary>
-		/// <value>
-		/// The position on the Y axis.
-		/// </value>
-		[Required]
-		public float Y { get; set; }
-
 		/// <summary>
 		/// Gets or sets the position on the Z axis.
 		/// </summary>
@@ -39,20 +14,18 @@ namespace NFive.SDK.Core.Models
 		public float Z { get; set; }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Position"/> class.
+		/// Initializes a new instance of the <see cref="Vector3"/> class.
 		/// </summary>
-		public Position() { }
+		public Vector3() { }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Position"/> class.
+		/// Initializes a new instance of the <see cref="Vector3"/> class.
 		/// </summary>
 		/// <param name="x">The position on the X axis.</param>
 		/// <param name="y">The position on the Y axis.</param>
 		/// <param name="z">The position on the Z axis.</param>
-		public Position(float x, float y, float z)
+		public Vector3(float x, float y, float z) : base(x, y)
 		{
-			this.X = x;
-			this.Y = y;
 			this.Z = z;
 		}
 
@@ -65,13 +38,13 @@ namespace NFive.SDK.Core.Models
 		public override string ToString() => $"X: {this.X}, Y: {this.Y}, Z: {this.Z}";
 
 		/// <summary>
-		/// Determines whether the specified <see cref="Position" />, is equal to this instance.
+		/// Determines whether the specified <see cref="Vector3" />, is equal to this instance.
 		/// </summary>
-		/// <param name="pos">The <see cref="Position" /> to compare with this instance.</param>
+		/// <param name="pos">The <see cref="Vector3" /> to compare with this instance.</param>
 		/// <returns>
-		///   <c>true</c> if the specified <see cref="Position" /> is equal to this instance; otherwise, <c>false</c>.
+		///   <c>true</c> if the specified <see cref="Vector3" /> is equal to this instance; otherwise, <c>false</c>.
 		/// </returns>
-		protected bool Equals(Position pos)
+		protected bool Equals(Vector3 pos)
 		{
 			return this.X.Equals(pos.X) && this.Y.Equals(pos.Y) && this.Z.Equals(pos.Z);
 		}
@@ -87,7 +60,7 @@ namespace NFive.SDK.Core.Models
 		{
 			if (ReferenceEquals(null, obj)) return false;
 			if (ReferenceEquals(this, obj)) return true;
-			return obj.GetType() == GetType() && Equals((Position)obj);
+			return obj.GetType() == GetType() && Equals((Vector3)obj);
 		}
 
 		/// <summary>
@@ -98,19 +71,19 @@ namespace NFive.SDK.Core.Models
 		/// </returns>
 		public override int GetHashCode() => ToString().GetHashCode();
 
-		/// <summary>This method determines whether two Positions have the same value.</summary>
+		/// <summary>This method determines whether two Vectors have the same value.</summary>
 		/// <seealso cref="operator!="/>
 		/// <seealso cref="Equals"/>
-		public static bool operator ==(Position a, Position b)
+		public static bool operator ==(Vector3 a, Vector3 b)
 		{
 			if ((object)a == null) return (object)b == null;
 			return a.Equals(b);
 		}
 
-		/// <summary>This method determines whether two Positions do not have the same value.</summary>
+		/// <summary>This method determines whether two Vectors do not have the same value.</summary>
 		/// <seealso cref="operator=="/>
 		/// <seealso cref="Equals"/>
-		public static bool operator !=(Position a, Position b)
+		public static bool operator !=(Vector3 a, Vector3 b)
 		{
 			return !(a == b);
 		}

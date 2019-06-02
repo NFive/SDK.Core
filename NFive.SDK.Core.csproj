@@ -65,6 +65,8 @@
     <Compile Include="Extensions\TypeExtensions.cs" />
     <Compile Include="Extensions\NumericExtensions.cs" />
     <Compile Include="Extensions\PositionExtensions.cs" />
+    <Compile Include="Extensions\Vector2Extensions.cs" />
+    <Compile Include="Extensions\Vector3Extensions.cs" />
     <Compile Include="Helpers\GuidGenerator.cs" />
     <Compile Include="Helpers\MathHelpers.cs" />
     <Compile Include="IoC\Lifetime.cs" />
@@ -76,6 +78,8 @@
     <Compile Include="Models\Player\User.cs" />
     <Compile Include="Models\Position.cs" />
     <Compile Include="IoC\ComponentAttribute.cs" />
+    <Compile Include="Models\Vector2.cs" />
+    <Compile Include="Models\Vector3.cs" />
     <Compile Include="PluginAttribute.cs" />
     <Compile Include="Plugins\Client.cs" />
     <Compile Include="Plugins\Plugin.cs" />

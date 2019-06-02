@@ -5,23 +5,22 @@ using System;
 namespace NFive.SDK.Core.Extensions
 {
 	[PublicAPI]
-	[Obsolete]
-	public static class PositionExtensions
+	public static class Vector3Extensions
 	{
-		public static Position TranslateDir(this Position pos, float angleInDegrees, float distance) =>
-			new Position(
+		public static Vector3 TranslateDir(this Vector3 pos, float angleInDegrees, float distance) =>
+			new Vector3(
 				pos.X + (float)Math.Cos(angleInDegrees.ToRadians()) * distance,
 				pos.Y + (float)Math.Sin(angleInDegrees.ToRadians()) * distance,
 				pos.Z
 			);
 
-		public static Position Lerp(Position pos1, Position pos2, float normalizedInterval) =>
-			new Position(
+		public static Vector3 Lerp(Vector3 pos1, Vector3 pos2, float normalizedInterval) =>
+			new Vector3(
 				pos1.X.Lerp(pos2.X, normalizedInterval),
 				pos1.Y.Lerp(pos2.Y, normalizedInterval),
 				pos1.Z.Lerp(pos2.Z, normalizedInterval)
 			);
 
-		public static Position InFrontOf(this Position position, float heading, float distance) => position.TranslateDir(heading + 90, distance);
+		public static Vector3 InFrontOf(this Vector3 position, float heading, float distance) => position.TranslateDir(heading + 90, distance);
 	}
 }
