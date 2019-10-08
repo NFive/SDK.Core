@@ -1,6 +1,6 @@
-using JetBrains.Annotations;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Models
 {
@@ -39,12 +39,12 @@ namespace NFive.SDK.Core.Models
 		public float Z { get; set; }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Position"/> class.
+		/// Initializes a new instance of the <see cref="Position" /> class.
 		/// </summary>
 		public Position() { }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Position"/> class.
+		/// Initializes a new instance of the <see cref="Position" /> class.
 		/// </summary>
 		/// <param name="x">The position on the X axis.</param>
 		/// <param name="y">The position on the Y axis.</param>
@@ -69,19 +69,16 @@ namespace NFive.SDK.Core.Models
 		/// </summary>
 		/// <param name="pos">The <see cref="Position" /> to compare with this instance.</param>
 		/// <returns>
-		///   <c>true</c> if the specified <see cref="Position" /> is equal to this instance; otherwise, <c>false</c>.
+		/// <c>true</c> if the specified <see cref="Position" /> is equal to this instance; otherwise, <c>false</c>.
 		/// </returns>
-		protected bool Equals(Position pos)
-		{
-			return this.X.Equals(pos.X) && this.Y.Equals(pos.Y) && this.Z.Equals(pos.Z);
-		}
+		protected bool Equals(Position pos) => this.X.Equals(pos.X) && this.Y.Equals(pos.Y) && this.Z.Equals(pos.Z);
 
 		/// <summary>
 		/// Determines whether the specified <see cref="object" />, is equal to this instance.
 		/// </summary>
 		/// <param name="obj">The <see cref="object" /> to compare with this instance.</param>
 		/// <returns>
-		///   <c>true</c> if the specified <see cref="object" /> is equal to this instance; otherwise, <c>false</c>.
+		/// <c>true</c> if the specified <see cref="object" /> is equal to this instance; otherwise, <c>false</c>.
 		/// </returns>
 		public override bool Equals(object obj)
 		{
@@ -99,8 +96,8 @@ namespace NFive.SDK.Core.Models
 		public override int GetHashCode() => ToString().GetHashCode();
 
 		/// <summary>This method determines whether two Positions have the same value.</summary>
-		/// <seealso cref="operator!="/>
-		/// <seealso cref="Equals"/>
+		/// <seealso cref="operator!=" />
+		/// <seealso cref="Equals" />
 		public static bool operator ==(Position a, Position b)
 		{
 			if ((object)a == null) return (object)b == null;
@@ -108,11 +105,8 @@ namespace NFive.SDK.Core.Models
 		}
 
 		/// <summary>This method determines whether two Positions do not have the same value.</summary>
-		/// <seealso cref="operator=="/>
-		/// <seealso cref="Equals"/>
-		public static bool operator !=(Position a, Position b)
-		{
-			return !(a == b);
-		}
+		/// <seealso cref="operator==" />
+		/// <seealso cref="Equals" />
+		public static bool operator !=(Position a, Position b) => !(a == b);
 	}
 }

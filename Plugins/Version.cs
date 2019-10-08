@@ -1,5 +1,5 @@
-using JetBrains.Annotations;
 using System;
+using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Plugins
 {
@@ -56,9 +56,6 @@ namespace NFive.SDK.Core.Plugins
 		/// <returns>
 		/// A formatted <see cref="string" /> that represents this version number.
 		/// </returns>
-		public override string ToString()
-		{
-			return $"{this.Major}.{this.Minor}.{this.Patch}{(this.PreRelease == null ? string.Empty : $"-{this.PreRelease}")}{(this.Build == null ? string.Empty : $"+{this.Build}")}";
-		}
+		public override string ToString() => $"{this.Major}.{this.Minor}.{this.Patch}{(this.PreRelease == null ? string.Empty : $"-{this.PreRelease}")}{(this.Build == null ? string.Empty : $"+{this.Build}")}";
 	}
 }

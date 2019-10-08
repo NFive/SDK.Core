@@ -30,6 +30,7 @@ namespace NFive.SDK.Core.Arguments
 				{
 					return new OptionSpecification(property, string.Empty, property.Name.ToLowerInvariant());
 				}
+
 				return spec;
 			}
 
@@ -39,7 +40,8 @@ namespace NFive.SDK.Core.Arguments
 				return ValueSpecification.FromAttribute(property, va.Single(), property.PropertyType,
 					property.PropertyType.GetTypeInfo().IsEnum
 						? Enum.GetNames(property.PropertyType)
-						: Enumerable.Empty<string>());
+						: Enumerable.Empty<string>()
+				);
 			}
 
 			throw new InvalidOperationException();

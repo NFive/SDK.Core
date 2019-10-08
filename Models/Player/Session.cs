@@ -1,9 +1,9 @@
-using JetBrains.Annotations;
-using Newtonsoft.Json;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
+using JetBrains.Annotations;
+using Newtonsoft.Json;
 
 namespace NFive.SDK.Core.Models.Player
 {
@@ -100,7 +100,7 @@ namespace NFive.SDK.Core.Models.Player
 		/// Gets a value indicating whether a client is currently connected.
 		/// </summary>
 		/// <value>
-		///   <c>true</c> if a client is currently is connected; otherwise, <c>false</c>.
+		/// <c>true</c> if a client is currently is connected; otherwise, <c>false</c>.
 		/// </value>
 		[JsonIgnore]
 		public bool IsConnected => this.Connected.HasValue && !this.Disconnected.HasValue;

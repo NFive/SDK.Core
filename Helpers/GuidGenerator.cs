@@ -1,6 +1,6 @@
-using JetBrains.Annotations;
 using System;
 using System.Security.Cryptography;
+using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Helpers
 {

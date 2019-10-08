@@ -15,9 +15,6 @@ namespace NFive.SDK.Core.Arguments
 			this.LongName = longName;
 		}
 
-		public static OptionSpecification FromAttribute(PropertyInfo property, OptionAttribute attribute, Type conversionType)
-		{
-			return new OptionSpecification(property, attribute.ShortName, attribute.LongName);
-		}
+		public static OptionSpecification FromAttribute(PropertyInfo property, OptionAttribute attribute, Type conversionType) => new OptionSpecification(property, attribute.ShortName, attribute.LongName);
 	}
 }

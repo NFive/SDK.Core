@@ -1,6 +1,6 @@
+using System;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
-using System;
 
 namespace NFive.SDK.Core.Plugins
 {
@@ -28,13 +28,13 @@ namespace NFive.SDK.Core.Plugins
 		public string Project { get; set; }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Name"/> class.
+		/// Initializes a new instance of the <see cref="Name" /> class.
 		/// </summary>
 		[JsonConstructor]
 		public Name() { }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Name"/> class from a name string.
+		/// Initializes a new instance of the <see cref="Name" /> class from a name string.
 		/// </summary>
 		/// <param name="value">The plugin name string.</param>
 		/// <exception cref="ArgumentNullException">Plugin name must be in \"vendor/project\" format.</exception>
@@ -64,7 +64,7 @@ namespace NFive.SDK.Core.Plugins
 		/// </summary>
 		/// <param name="obj">The <see cref="object" /> to compare with this instance.</param>
 		/// <returns>
-		///   <c>true</c> if the specified <see cref="object" /> is equal to this instance; otherwise, <c>false</c>.
+		/// <c>true</c> if the specified <see cref="object" /> is equal to this instance; otherwise, <c>false</c>.
 		/// </returns>
 		public override bool Equals(object obj)
 		{
@@ -77,13 +77,13 @@ namespace NFive.SDK.Core.Plugins
 		/// Returns a hash code for this instance.
 		/// </summary>
 		/// <returns>
-		/// A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+		/// A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
 		/// </returns>
 		public override int GetHashCode() => ToString().GetHashCode();
 
 		/// <summary>This method determines whether two Names have the same value.</summary>
-		/// <seealso cref="operator!="/>
-		/// <seealso cref="Equals"/>
+		/// <seealso cref="operator!=" />
+		/// <seealso cref="Equals" />
 		public static bool operator ==(Name a, Name b)
 		{
 			if (a is null) return b is null;
@@ -92,12 +92,12 @@ namespace NFive.SDK.Core.Plugins
 		}
 
 		/// <summary>This method determines whether two Names do not have the same value.</summary>
-		/// <seealso cref="operator=="/>
-		/// <seealso cref="Equals"/>
+		/// <seealso cref="operator==" />
+		/// <seealso cref="Equals" />
 		public static bool operator !=(Name a, Name b) => !(a == b);
 
 		/// <summary>
-		/// Performs an implicit conversion from <see cref="string"/> to <see cref="Name"/>.
+		/// Performs an implicit conversion from <see cref="string" /> to <see cref="Name" />.
 		/// </summary>
 		/// <param name="value">The string to convert.</param>
 		/// <returns>
@@ -106,7 +106,7 @@ namespace NFive.SDK.Core.Plugins
 		public static implicit operator Name(string value) => new Name(value);
 
 		/// <summary>
-		/// Performs an implicit conversion from <see cref="Name"/> to <see cref="string"/>.
+		/// Performs an implicit conversion from <see cref="Name" /> to <see cref="string" />.
 		/// </summary>
 		/// <param name="value">The value to convert.</param>
 		/// <returns>

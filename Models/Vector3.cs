@@ -1,7 +1,9 @@
 using System.ComponentModel.DataAnnotations;
+using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Models
 {
+	[PublicAPI]
 	public class Vector3 : Vector2
 	{
 		/// <summary>
@@ -14,12 +16,12 @@ namespace NFive.SDK.Core.Models
 		public float Z { get; set; }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Vector3"/> class.
+		/// Initializes a new instance of the <see cref="Vector3" /> class.
 		/// </summary>
 		public Vector3() { }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Vector3"/> class.
+		/// Initializes a new instance of the <see cref="Vector3" /> class.
 		/// </summary>
 		/// <param name="x">The position on the X axis.</param>
 		/// <param name="y">The position on the Y axis.</param>
@@ -42,19 +44,16 @@ namespace NFive.SDK.Core.Models
 		/// </summary>
 		/// <param name="pos">The <see cref="Vector3" /> to compare with this instance.</param>
 		/// <returns>
-		///   <c>true</c> if the specified <see cref="Vector3" /> is equal to this instance; otherwise, <c>false</c>.
+		/// <c>true</c> if the specified <see cref="Vector3" /> is equal to this instance; otherwise, <c>false</c>.
 		/// </returns>
-		protected bool Equals(Vector3 pos)
-		{
-			return this.X.Equals(pos.X) && this.Y.Equals(pos.Y) && this.Z.Equals(pos.Z);
-		}
+		protected bool Equals(Vector3 pos) => this.X.Equals(pos.X) && this.Y.Equals(pos.Y) && this.Z.Equals(pos.Z);
 
 		/// <summary>
 		/// Determines whether the specified <see cref="object" />, is equal to this instance.
 		/// </summary>
 		/// <param name="obj">The <see cref="object" /> to compare with this instance.</param>
 		/// <returns>
-		///   <c>true</c> if the specified <see cref="object" /> is equal to this instance; otherwise, <c>false</c>.
+		/// <c>true</c> if the specified <see cref="object" /> is equal to this instance; otherwise, <c>false</c>.
 		/// </returns>
 		public override bool Equals(object obj)
 		{
@@ -72,8 +71,8 @@ namespace NFive.SDK.Core.Models
 		public override int GetHashCode() => ToString().GetHashCode();
 
 		/// <summary>This method determines whether two Vectors have the same value.</summary>
-		/// <seealso cref="operator!="/>
-		/// <seealso cref="Equals"/>
+		/// <seealso cref="operator!=" />
+		/// <seealso cref="Equals" />
 		public static bool operator ==(Vector3 a, Vector3 b)
 		{
 			if ((object)a == null) return (object)b == null;
@@ -81,11 +80,8 @@ namespace NFive.SDK.Core.Models
 		}
 
 		/// <summary>This method determines whether two Vectors do not have the same value.</summary>
-		/// <seealso cref="operator=="/>
-		/// <seealso cref="Equals"/>
-		public static bool operator !=(Vector3 a, Vector3 b)
-		{
-			return !(a == b);
-		}
+		/// <seealso cref="operator==" />
+		/// <seealso cref="Equals" />
+		public static bool operator !=(Vector3 a, Vector3 b) => !(a == b);
 	}
 }

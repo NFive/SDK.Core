@@ -13,9 +13,6 @@ namespace NFive.SDK.Core.Arguments
 			this.Index = index;
 		}
 
-		public static ValueSpecification FromAttribute(PropertyInfo property, ValueAttribute attribute, Type conversionType, IEnumerable<string> enumValues)
-		{
-			return new ValueSpecification(property, attribute.Index, attribute.Required);
-		}
+		public static ValueSpecification FromAttribute(PropertyInfo property, ValueAttribute attribute, Type conversionType, IEnumerable<string> enumValues) => new ValueSpecification(property, attribute.Index, attribute.Required);
 	}
 }

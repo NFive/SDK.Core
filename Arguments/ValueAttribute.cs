@@ -17,7 +17,7 @@ namespace NFive.SDK.Core.Arguments
 
 		/// <inheritdoc />
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ValueAttribute"/> class.
+		/// Initializes a new instance of the <see cref="ValueAttribute" /> class.
 		/// </summary>
 		public ValueAttribute(int index)
 		{

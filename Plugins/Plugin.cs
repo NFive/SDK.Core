@@ -1,6 +1,6 @@
-using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Plugins
 {
@@ -34,7 +34,7 @@ namespace NFive.SDK.Core.Plugins
 		/// Gets the full plugin name.
 		/// </summary>
 		/// <value>
-		/// The full plugin name, composed of the <see cref="Name"/> and <see cref="Version"/>.
+		/// The full plugin name, composed of the <see cref="Name" /> and <see cref="Version" />.
 		/// </value>
 		public string FullName => $"{this.Name}@{this.Version}";
 

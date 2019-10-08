@@ -1,7 +1,7 @@
-using JetBrains.Annotations;
-using NFive.SDK.Core.Helpers;
 using System;
 using System.ComponentModel.DataAnnotations;
+using JetBrains.Annotations;
+using NFive.SDK.Core.Helpers;
 
 namespace NFive.SDK.Core.Models
 {
@@ -43,7 +43,7 @@ namespace NFive.SDK.Core.Models
 		public DateTime? Deleted { get; set; }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="IdentityModel"/> class.
+		/// Initializes a new instance of the <see cref="IdentityModel" /> class.
 		/// </summary>
 		protected IdentityModel()
 		{

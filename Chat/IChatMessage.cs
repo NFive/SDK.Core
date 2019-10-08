@@ -1,12 +1,13 @@
+using System;
 using JetBrains.Annotations;
 using NFive.SDK.Core.Models.Player;
-using System;
 
 namespace NFive.SDK.Core.Chat
 {
 	/// <summary>
-	/// Represents a chat message sent from a <see cref="User"/>.
+	/// Represents a chat message sent from a <see cref="User" />.
 	/// </summary>
+	[PublicAPI]
 	public interface IChatMessage
 	{
 		/// <summary>
@@ -18,10 +19,10 @@ namespace NFive.SDK.Core.Chat
 		Guid Id { get; set; }
 
 		/// <summary>
-		/// Gets or sets the <see cref="User"/> sending the message.
+		/// Gets or sets the <see cref="User" /> sending the message.
 		/// </summary>
 		/// <value>
-		/// The <see cref="User"/> sending the message.
+		/// The <see cref="User" /> sending the message.
 		/// </value>
 		User Sender { get; set; }
 
@@ -34,11 +35,12 @@ namespace NFive.SDK.Core.Chat
 		string Content { get; set; }
 
 		/// <summary>
-		/// Gets or sets the target <see cref="User"/> of the message.
+		/// Gets or sets the target <see cref="User" /> of the message.
 		/// </summary>
 		/// <value>
-		/// The target <see cref="User"/> of the message.
+		/// The target <see cref="User" /> of the message.
 		/// </value>
-		[CanBeNull] User Target { get; set; }
+		[CanBeNull]
+		User Target { get; set; }
 	}
 }

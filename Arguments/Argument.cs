@@ -1,20 +1,14 @@
-using JetBrains.Annotations;
-using NFive.SDK.Core.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using JetBrains.Annotations;
+using NFive.SDK.Core.Extensions;
 
 namespace NFive.SDK.Core.Arguments
 {
 	[PublicAPI]
 	public static class Argument
 	{
-		public class Arg
-		{
-			public string Data { get; set; }
-			public bool Processed { get; set; }
-		}
-
 		public static T Parse<T>(IEnumerable<string> args)
 		{
 			var parsedArgs = args.Select(arg => new Arg { Data = arg }).ToList();
@@ -78,6 +72,13 @@ namespace NFive.SDK.Core.Arguments
 			if (parsedArgs.Any(a => !a.Processed)) throw new Exception("Unable to match all arguments to properties.");
 
 			return res;
+		}
+
+		public class Arg
+		{
+			public string Data { get; set; }
+
+			public bool Processed { get; set; }
 		}
 	}
 }
