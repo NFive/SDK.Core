@@ -1,7 +1,7 @@
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
-namespace NFive.SDK.Core.Rpc
+namespace NFive.SDK.Core.Communications
 {
 	/// <summary>
 	/// Utilities to convert objects to and from JSON strings.
