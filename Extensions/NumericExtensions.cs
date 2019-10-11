@@ -1,7 +1,9 @@
 using System;
+using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Extensions
 {
+	[PublicAPI]
 	public static class NumericExtensions
 	{
 		public static double ToRadians(this float val) => Math.PI / 180 * val;
