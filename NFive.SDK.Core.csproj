@@ -69,7 +69,6 @@
     <Compile Include="Extensions\Vector3Extensions.cs" />
     <Compile Include="Helpers\GuidGenerator.cs" />
     <Compile Include="Helpers\MathHelpers.cs" />
-    <Compile Include="IoC\Lifetime.cs" />
     <Compile Include="Models\Audio\RadioStation.cs" />
     <Compile Include="Models\Color.cs" />
     <Compile Include="Models\IdentityModel.cs" />
@@ -77,7 +76,6 @@
     <Compile Include="Models\Player\Session.cs" />
     <Compile Include="Models\Player\User.cs" />
     <Compile Include="Models\Position.cs" />
-    <Compile Include="IoC\ComponentAttribute.cs" />
     <Compile Include="Models\Vector2.cs" />
     <Compile Include="Models\Vector3.cs" />
     <Compile Include="PluginAttribute.cs" />
