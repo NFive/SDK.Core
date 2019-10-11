@@ -6,7 +6,7 @@ namespace NFive.SDK.Core.Events
 	/// Core NFive events.
 	/// </summary>
 	[PublicAPI]
-	public static class NFiveCoreEvents
+	public static class CoreEvents
 	{
 		/// <summary>
 		/// The event that is fired as soon as a client initializes.
