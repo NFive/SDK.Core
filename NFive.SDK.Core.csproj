@@ -87,8 +87,8 @@
     <Compile Include="Plugins\Version.cs" />
     <Compile Include="Plugins\VersionRange.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Communications\NFiveCoreEvents.cs" />
-    <Compile Include="Communications\Serializer.cs" />
+    <Compile Include="Events\NFiveCoreEvents.cs" />
+    <Compile Include="Utilities\Serializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
