@@ -13,7 +13,7 @@ namespace NFive.SDK.Core.Extensions
 				pos.Y + (float)Math.Sin(angleInDegrees.ToRadians()) * distance
 			);
 
-		public static Vector2 Lerp(Vector2 pos1, Vector2 pos2, float normalizedInterval) =>
+		public static Vector2 Lerp(this Vector2 pos1, Vector2 pos2, float normalizedInterval) =>
 			new Vector2(
 				pos1.X.Lerp(pos2.X, normalizedInterval),
 				pos1.Y.Lerp(pos2.Y, normalizedInterval)
