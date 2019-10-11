@@ -16,7 +16,7 @@ namespace NFive.SDK.Core.Events
 		/// <summary>
 		/// The event that is fired as soon as a client has initialized.
 		/// </summary>
-		public const string ClientInitialized = "nfive:core:clientInitialize";
+		public const string ClientInitialized = "nfive:core:clientInitialized";
 
 		/// <summary>
 		/// The event that is fired after client initialization to request plugin information.
