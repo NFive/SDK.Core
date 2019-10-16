@@ -7,6 +7,7 @@ using NFive.SDK.Core.Extensions;
 namespace NFive.SDK.Core.Arguments
 {
 	[PublicAPI]
+	// TODO: Test it works client side
 	public static class Argument
 	{
 		public static T Parse<T>(IEnumerable<string> args)

@@ -1,7 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Diagnostics.CodeAnalysis;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
@@ -11,7 +10,6 @@ namespace NFive.SDK.Core.Models.Player
 	/// Session model representing a user's connection to the server.
 	/// </summary>
 	[PublicAPI]
-	[SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
 	public class Session
 	{
 		/// <summary>

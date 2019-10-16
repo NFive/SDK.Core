@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Diagnostics.CodeAnalysis;
 using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Models.Player
@@ -12,7 +11,6 @@ namespace NFive.SDK.Core.Models.Player
 	/// </summary>
 	/// <seealso cref="IdentityModel" />
 	[PublicAPI]
-	[SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
 	public class User : IdentityModel
 	{
 		/// <summary>
@@ -22,7 +20,7 @@ namespace NFive.SDK.Core.Models.Player
 		/// The license.
 		/// </value>
 		[Required]
-		[StringLength(40, MinimumLength = 40)] // TODO: Confirm
+		[StringLength(40, MinimumLength = 40)]
 		public string License { get; set; }
 
 		/// <summary>
