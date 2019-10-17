@@ -29,7 +29,7 @@ namespace NFive.SDK.Core.Models.Player
 		/// The IP address of the connected client.
 		/// </value>
 		[Required]
-		[StringLength(15, MinimumLength = 7)]
+		[StringLength(47, MinimumLength = 5)] // [::1] through [0000:0000:0000:0000:0000:0000:000.000.000.000]
 		public string IpAddress { get; set; }
 
 		/// <summary>
