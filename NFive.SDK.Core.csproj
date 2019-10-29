@@ -11,6 +11,9 @@
     <AssemblyName>NFive.SDK.Core.net</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AllowedReferenceRelatedFileExtensions>
+      .allowedextension
+    </AllowedReferenceRelatedFileExtensions>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
@@ -20,9 +23,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AllowedReferenceRelatedFileExtensions>
-      .allowedextension
-    </AllowedReferenceRelatedFileExtensions>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
@@ -32,9 +32,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AllowedReferenceRelatedFileExtensions>
-      .allowedextension
-    </AllowedReferenceRelatedFileExtensions>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="JetBrains.Annotations, Version=2019.1.3.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
@@ -63,6 +60,11 @@
     <Compile Include="Extensions\Vector3Extensions.cs" />
     <Compile Include="Helpers\GuidGenerator.cs" />
     <Compile Include="Helpers\MathHelpers.cs" />
+    <Compile Include="Input\ButtonCode.cs" />
+    <Compile Include="Input\InputMethod.cs" />
+    <Compile Include="Input\InputModifier.cs" />
+    <Compile Include="Input\InputControl.cs" />
+    <Compile Include="Input\KeyCode.cs" />
     <Compile Include="Locales\ILocaleCatalog.cs" />
     <Compile Include="Models\Audio\RadioStation.cs" />
     <Compile Include="Models\Color.cs" />
