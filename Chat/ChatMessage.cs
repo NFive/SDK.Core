@@ -1,6 +1,7 @@
 using System;
 using JetBrains.Annotations;
 using NFive.SDK.Core.Helpers;
+using NFive.SDK.Core.Models;
 using NFive.SDK.Core.Models.Player;
 
 namespace NFive.SDK.Core.Chat
@@ -12,9 +13,15 @@ namespace NFive.SDK.Core.Chat
 
 		public User Sender { get; set; }
 
-		public string Content { get; set; }
+		public string Style { get; set; }
 
-		public User Target { get; set; }
+		public string Template { get; set; }
+
+		public string[] Values { get; set; }
+
+		public Vector3 Location { get; set; }
+
+		public float? Radius { get; set; }
 
 		public ChatMessage()
 		{

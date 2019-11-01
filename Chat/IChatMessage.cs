@@ -1,5 +1,6 @@
 using System;
 using JetBrains.Annotations;
+using NFive.SDK.Core.Models;
 using NFive.SDK.Core.Models.Player;
 
 namespace NFive.SDK.Core.Chat
@@ -26,21 +27,15 @@ namespace NFive.SDK.Core.Chat
 		/// </value>
 		User Sender { get; set; }
 
-		/// <summary>
-		/// Gets or sets the content of the message.
-		/// </summary>
-		/// <value>
-		/// The content of the message.
-		/// </value>
-		string Content { get; set; }
+		string Style { get; set; }
 
-		/// <summary>
-		/// Gets or sets the target <see cref="User" /> of the message.
-		/// </summary>
-		/// <value>
-		/// The target <see cref="User" /> of the message.
-		/// </value>
+		string Template { get; set; }
+
+		string[] Values { get; set; }
+
 		[CanBeNull]
-		User Target { get; set; }
+		Vector3 Location { get; set; }
+
+		float? Radius { get; set; }
 	}
 }
