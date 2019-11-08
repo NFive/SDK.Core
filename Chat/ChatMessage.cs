@@ -6,11 +6,26 @@ using NFive.SDK.Core.Models.Player;
 
 namespace NFive.SDK.Core.Chat
 {
+	/// <summary>
+	/// Represents a chat message sent from a <see cref="User"/>.
+	/// </summary>
 	[PublicAPI]
-	public class ChatMessage : IChatMessage
+	public class ChatMessage
 	{
+		/// <summary>
+		/// Gets or sets the unique identifier of the message.
+		/// </summary>
+		/// <value>
+		/// The unique identifier of the message.
+		/// </value>
 		public Guid Id { get; set; }
 
+		/// <summary>
+		/// Gets or sets the <see cref="User"/> sending the message.
+		/// </summary>
+		/// <value>
+		/// The <see cref="User"/> sending the message.
+		/// </value>
 		public User Sender { get; set; }
 
 		public string Style { get; set; }
