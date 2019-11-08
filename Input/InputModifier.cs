@@ -1,7 +1,9 @@
 using System;
+using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Input
 {
+	[PublicAPI]
 	[Flags]
 	public enum InputModifier
 	{
