@@ -46,7 +46,6 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chat\ChatMessage.cs" />
     <Compile Include="Configuration\LocaleConfiguration.cs" />
     <Compile Include="Controllers\ControllerConfiguration.cs" />
     <Compile Include="Controllers\IControllerConfiguration.cs" />

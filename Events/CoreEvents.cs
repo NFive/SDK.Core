@@ -23,11 +23,6 @@ namespace NFive.SDK.Core.Events
 		/// </summary>
 		public const string ClientPlugins = "nfive:core:clientPlugins";
 
-		/// <summary>
-		/// The event that is fired when a message is received to be displayed by a client.
-		/// </summary>
-		public const string ChatMessage = "nfive:core:chat:message";
-
 		public const string CommandDispatch = "nfive:command:dispatch";
 
 		/// <summary>
