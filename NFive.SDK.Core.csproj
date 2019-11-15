@@ -58,7 +58,7 @@
     <Compile Include="Extensions\Vector3Extensions.cs" />
     <Compile Include="Helpers\GuidGenerator.cs" />
     <Compile Include="Helpers\MathHelpers.cs" />
-    <Compile Include="Input\ButtonCode.cs" />
+    <Compile Include="Input\ControllerInput.cs" />
     <Compile Include="Input\InputMethod.cs" />
     <Compile Include="Input\InputModifier.cs" />
     <Compile Include="Input\InputControl.cs" />
