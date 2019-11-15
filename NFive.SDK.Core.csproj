@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration\LocaleConfiguration.cs" />
+    <Compile Include="Configuration\SteamId.cs" />
     <Compile Include="Controllers\ControllerConfiguration.cs" />
     <Compile Include="Controllers\IControllerConfiguration.cs" />
     <Compile Include="Diagnostics\ILogger.cs" />
