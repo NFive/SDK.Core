@@ -2,6 +2,9 @@ using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Input
 {
+	/// <summary>
+	/// Represents the native GTA input controls.
+	/// </summary>
 	[PublicAPI]
 	public enum InputControl
 	{

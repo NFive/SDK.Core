@@ -3,6 +3,9 @@ using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Models
 {
+	/// <summary>
+	/// Represents a position in 3D space.
+	/// </summary>
 	[PublicAPI]
 	public class Vector3 : Vector2
 	{
