@@ -1,12 +1,13 @@
-using System;
-using JetBrains.Annotations;
-
 namespace NFive.SDK.Core.Diagnostics
 {
+    using JetBrains.Annotations;
+    using System;
+	//using JetBrains.Annotations;
+
 	/// <summary>
 	/// Provides logging interface and utility functions.
 	/// </summary>
-	[PublicAPI]
+	
 	public interface ILogger
 	{
 		/// <summary>

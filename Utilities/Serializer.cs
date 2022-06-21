@@ -1,12 +1,12 @@
-using JetBrains.Annotations;
-using Newtonsoft.Json;
-
-namespace NFive.SDK.Core.Utilities
+﻿namespace NFive.SDK.Core.Utilities
 {
+    using JetBrains.Annotations;
+    using Newtonsoft.Json;
+
 	/// <summary>
 	/// Utilities to convert objects to and from JSON strings.
 	/// </summary>
-	[PublicAPI]
+	
 	public class Serializer
 	{
 		/// <summary>Gets or sets the formatting option for the serializer.</summary>

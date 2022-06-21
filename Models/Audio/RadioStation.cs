@@ -1,7 +1,7 @@
-using JetBrains.Annotations;
-
 namespace NFive.SDK.Core.Models.Audio
 {
+	using JetBrains.Annotations;
+
 	/// <summary>
 	/// GTA radio stations.
 	/// </summary>

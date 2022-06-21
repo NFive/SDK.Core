@@ -1,9 +1,9 @@
-using System;
-using JetBrains.Annotations;
-using NFive.SDK.Core.Models;
-
 namespace NFive.SDK.Core.Extensions
 {
+	using System;
+	using JetBrains.Annotations;
+	using NFive.SDK.Core.Models;
+
 	[PublicAPI]
 	[Obsolete]
 	public static class PositionExtensions

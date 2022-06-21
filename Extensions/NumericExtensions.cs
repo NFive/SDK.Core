@@ -1,8 +1,8 @@
-using System;
-using JetBrains.Annotations;
-
 namespace NFive.SDK.Core.Extensions
 {
+	using System;
+	using JetBrains.Annotations;
+
 	[PublicAPI]
 	public static class NumericExtensions
 	{

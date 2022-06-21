@@ -1,14 +1,11 @@
-using System;
-using JetBrains.Annotations;
-using Newtonsoft.Json;
-
-namespace NFive.SDK.Core.Plugins
+﻿namespace NFive.SDK.Core.Plugins
 {
-	/// <summary>
-	/// Represents a plugin name, composed of the vendor and project.
-	/// </summary>
+    using JetBrains.Annotations;
+    using Newtonsoft.Json;
+    using System;
+
 	[Serializable]
-	[PublicAPI]
+	
 	public class Name
 	{
 		/// <summary>
@@ -45,7 +42,7 @@ namespace NFive.SDK.Core.Plugins
 
 			var parts = value.Split('/');
 
-			if (parts.Length != 2) throw new ArgumentException("Invalid plugin name format, plugin name must be in \"vendor/project\" format.", nameof(value));
+			if (parts.Length != 2) throw new ArgumentException($"Invalid plugin name format {value}, plugin name must be in \"vendor/project\" format.", nameof(value));
 
 			this.Vendor = parts[0];
 			this.Project = parts[1];

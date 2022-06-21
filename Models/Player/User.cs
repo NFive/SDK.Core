@@ -1,16 +1,14 @@
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using JetBrains.Annotations;
-
-namespace NFive.SDK.Core.Models.Player
+﻿namespace NFive.SDK.Core.Models.Player
 {
-	/// <inheritdoc />
-	/// <summary>
-	/// User model representing the player on the server.
-	/// </summary>
-	/// <seealso cref="IdentityModel" />
-	[PublicAPI]
+	using JetBrains.Annotations;
+	using System.Collections.Generic;
+
+    /// <inheritdoc />
+    /// <summary>
+    /// User model representing the player on the server.
+    /// </summary>
+    /// <seealso cref="IdentityModel" />
+    
 	public class User : IdentityModel
 	{
 		/// <summary>
@@ -19,8 +17,6 @@ namespace NFive.SDK.Core.Models.Player
 		/// <value>
 		/// The license.
 		/// </value>
-		[Required]
-		[StringLength(40, MinimumLength = 40)]
 		public string License { get; set; }
 
 		/// <summary>
@@ -37,8 +33,6 @@ namespace NFive.SDK.Core.Models.Player
 		/// <value>
 		/// The player name.
 		/// </value>
-		[Required]
-		[StringLength(32, MinimumLength = 1)] // TODO: Confirm
 		public string Name { get; set; }
 
 		/// <summary>
@@ -47,7 +41,6 @@ namespace NFive.SDK.Core.Models.Player
 		/// <value>
 		/// The sessions.
 		/// </value>
-		[InverseProperty("User")]
 		public virtual List<Session> Sessions { get; set; }
 	}
 }

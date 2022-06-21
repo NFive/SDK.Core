@@ -1,13 +1,10 @@
-using System;
-using JetBrains.Annotations;
-
-namespace NFive.SDK.Core.Plugins
+﻿namespace NFive.SDK.Core.Plugins
 {
-	/// <summary>
-	/// Represents a semantic version range.
-	/// </summary>
+    using JetBrains.Annotations;
+    using System;
+
 	[Serializable]
-	[PublicAPI]
+	
 	public class VersionRange
 	{
 		/// <summary>

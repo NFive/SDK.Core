@@ -1,13 +1,9 @@
-using System;
-using System.Collections.Generic;
-using JetBrains.Annotations;
-
-namespace NFive.SDK.Core.Plugins
+﻿namespace NFive.SDK.Core.Plugins
 {
-	/// <summary>
-	/// Server file requirements for a plugin.
-	/// </summary>
-	[PublicAPI]
+	using System;
+	using System.Collections.Generic;
+
+	//g
 	[Serializable]
 	public class Server
 	{
