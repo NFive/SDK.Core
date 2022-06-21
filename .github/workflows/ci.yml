@@ -3,12 +3,12 @@ name: CI
 on:
   push:
     branches:
-      - '**'
+      - "**"
     tags:
-      - 'v*.*.*'
+      - "v*.*.*"
   pull_request:
     branches:
-      - '**'
+      - "**"
 
 jobs:
   calculate-version:
@@ -18,21 +18,21 @@ jobs:
       semVer: ${{ steps.gitversion.outputs.semVer }}
 
     steps:
-    - uses: actions/checkout@v2.4.2
-      with:
-        fetch-depth: 0
+      - uses: actions/checkout@v2.4.2
+        with:
+          fetch-depth: 0
 
-    - name: Install GitVersion
-      uses: gittools/actions/gitversion/setup@v0.9.7
-      with:
-        versionSpec: '5.x'
+      - name: Install GitVersion
+        uses: gittools/actions/gitversion/setup@v0.9.7
+        with:
+          versionSpec: "5.x"
 
-    - name: Determine Version
-      id: gitversion
-      uses: gittools/actions/gitversion/execute@v0.9.7
-      with:
-        useConfigFile: true
-        configFilePath: ./GitVersion.yml
+      - name: Determine Version
+        id: gitversion
+        uses: gittools/actions/gitversion/execute@v0.9.7
+        with:
+          useConfigFile: true
+          configFilePath: ./GitVersion.yml
 
   build:
     runs-on: windows-latest
@@ -48,13 +48,13 @@ jobs:
 
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1.0.6
-      
+
       - name: Restore dependencies
         run: nuget restore NFive.SDK.Core.sln
 
       - name: Build the solution
         run: msbuild NFive.SDK.Core.sln /p:Configuration=Release /p:Outdir=Build
-      
+
       - name: Attach Zip as build artifact
         uses: actions/upload-artifact@v3.1.0
         with:
