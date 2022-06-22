@@ -1,9 +1,9 @@
-using System;
-using JetBrains.Annotations;
-
-namespace NFive.SDK.Core.Configuration
+﻿namespace NFive.SDK.Core.Configuration
 {
-	[PublicAPI]
+    using JetBrains.Annotations;
+    using System;
+
+	
 	public class SteamId
 	{
 		protected readonly long Value;

@@ -1,11 +1,13 @@
-using JetBrains.Annotations;
-
 namespace NFive.SDK.Core.Diagnostics
 {
+	using JetBrains.Annotations;
+
+	//using JetBrains.Annotations;
+
 	/// <summary>
 	/// Defines available log levels.
 	/// </summary>
-	[PublicAPI]
+	
 	public enum LogLevel
 	{
 		/// <summary>

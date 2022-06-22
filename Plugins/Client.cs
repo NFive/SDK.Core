@@ -1,13 +1,10 @@
-using System;
-using System.Collections.Generic;
-using JetBrains.Annotations;
-
-namespace NFive.SDK.Core.Plugins
+﻿namespace NFive.SDK.Core.Plugins
 {
-	/// <summary>
-	/// Client file requirements for a plugin.
-	/// </summary>
-	[PublicAPI]
+    using JetBrains.Annotations;
+    using System;
+	using System.Collections.Generic;
+
+	
 	[Serializable]
 	public class Client
 	{

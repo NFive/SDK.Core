@@ -1,12 +1,9 @@
-using System;
-using JetBrains.Annotations;
-
-namespace NFive.SDK.Core.Plugins
+﻿namespace NFive.SDK.Core.Plugins
 {
-	/// <summary>
-	/// Repository configuration for a plugin.
-	/// </summary>
-	[PublicAPI]
+    using JetBrains.Annotations;
+    using System;
+
+	
 	[Serializable]
 	public class Repository
 	{

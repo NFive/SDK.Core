@@ -1,14 +1,9 @@
-using System;
-using JetBrains.Annotations;
-
-namespace NFive.SDK.Core.Controllers
+﻿namespace NFive.SDK.Core.Controllers
 {
-	/// <inheritdoc />
-	/// <summary>
-	/// Represents the configuration that is automatically loaded into a <c>ConfigurableController</c>.
-	/// </summary>
-	/// <seealso cref="IControllerConfiguration" />
-	[PublicAPI]
+    using JetBrains.Annotations;
+    using System;
+
+	
 	[Serializable]
 	public abstract class ControllerConfiguration : IControllerConfiguration
 	{

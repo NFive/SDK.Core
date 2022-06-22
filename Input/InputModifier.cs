@@ -1,8 +1,8 @@
-using System;
-using JetBrains.Annotations;
-
 namespace NFive.SDK.Core.Input
 {
+	using System;
+	using JetBrains.Annotations;
+
 	[PublicAPI]
 	[Flags]
 	public enum InputModifier

@@ -1,15 +1,13 @@
-using System;
-using System.ComponentModel.DataAnnotations;
-using JetBrains.Annotations;
-using NFive.SDK.Core.Helpers;
-
-namespace NFive.SDK.Core.Models
+﻿namespace NFive.SDK.Core.Models
 {
+	using System;
+    using NFive.SDK.Core.Helpers;
+
 	/// <inheritdoc />
 	/// <summary>
 	/// Represents the key properties for a stored model.
 	/// </summary>
-	[PublicAPI]
+	
 	public abstract class IdentityModel : IIdentityModel
 	{
 		/// <inheritdoc />
@@ -19,8 +17,6 @@ namespace NFive.SDK.Core.Models
 		/// <value>
 		/// The model identifier.
 		/// </value>
-		[Key]
-		[Required]
 		public Guid Id { get; set; }
 
 		/// <inheritdoc />
@@ -30,7 +26,6 @@ namespace NFive.SDK.Core.Models
 		/// <value>
 		/// The timestamp of when the model was created.
 		/// </value>
-		[Required]
 		public DateTime Created { get; set; }
 
 		/// <inheritdoc />
