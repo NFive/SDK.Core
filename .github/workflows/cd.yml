@@ -35,7 +35,7 @@ jobs:
     needs: calculate-version
     env:
       SEMVER: ${{ needs.calculate-version.outputs.semVer }}
-      ZipName: NFive.SDK.Core${{ needs.calculate-version.outputs.semVer }}.zip
+      ZipName: NFive.SDK.Core-${{ needs.calculate-version.outputs.semVer }}.zip
 
     steps:
       - uses: actions/checkout@v2.4.2

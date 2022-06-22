@@ -58,5 +58,5 @@ jobs:
       - name: Attach Zip as build artifact
         uses: actions/upload-artifact@v3.1.0
         with:
-          name: NFive.SDK.Core_${{ env.SEMVER }}
+          name: NFive.SDK.Core-${{ env.SEMVER }}
           path: Build
