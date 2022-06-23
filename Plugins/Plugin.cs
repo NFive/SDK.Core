@@ -1,11 +1,11 @@
-﻿namespace NFive.SDK.Core.Plugins
+namespace NFive.SDK.Core.Plugins
 {
     using JetBrains.Annotations;
     using System;
     using System.Collections.Generic;
 
-    
-    [Serializable]
+	[PublicAPI]
+	[Serializable]
 	public class Plugin
 	{
 		/// <summary>

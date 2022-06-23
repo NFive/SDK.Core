@@ -1,9 +1,10 @@
-﻿namespace NFive.SDK.Core.Plugins
+namespace NFive.SDK.Core.Plugins
 {
 	using System;
 	using System.Collections.Generic;
+	using JetBrains.Annotations;
 
-	//g
+	[PublicAPI]
 	[Serializable]
 	public class Server
 	{

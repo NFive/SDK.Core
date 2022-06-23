@@ -1,11 +1,11 @@
-﻿namespace NFive.SDK.Core.Events
+namespace NFive.SDK.Core.Events
 {
 	using JetBrains.Annotations;
 
 	/// <summary>
 	/// Core NFive events.
 	/// </summary>
-	
+	[PublicAPI]
 	public static class CoreEvents
 	{
 		/// <summary>

@@ -1,9 +1,9 @@
-﻿namespace NFive.SDK.Core.Plugins
+namespace NFive.SDK.Core.Plugins
 {
     using JetBrains.Annotations;
     using System;
 
-	
+    [PublicAPI]
 	[Serializable]
 	public class Repository
 	{

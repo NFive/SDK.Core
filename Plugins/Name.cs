@@ -1,12 +1,12 @@
-﻿namespace NFive.SDK.Core.Plugins
+namespace NFive.SDK.Core.Plugins
 {
     using JetBrains.Annotations;
     using Newtonsoft.Json;
     using System;
 
+    [PublicAPI]
 	[Serializable]
-	
-	public class Name
+    public class Name
 	{
 		/// <summary>
 		/// Gets or sets the plugin name vendor.

@@ -7,7 +7,7 @@ namespace NFive.SDK.Core.Diagnostics
 	/// <summary>
 	/// Provides logging interface and utility functions.
 	/// </summary>
-	
+	[PublicAPI]
 	public interface ILogger
 	{
 		/// <summary>

@@ -1,9 +1,9 @@
-﻿namespace NFive.SDK.Core.Controllers
+namespace NFive.SDK.Core.Controllers
 {
-    using JetBrains.Annotations;
-    using System;
+	using JetBrains.Annotations;
+	using System;
 
-	
+	[PublicAPI]
 	[Serializable]
 	public abstract class ControllerConfiguration : IControllerConfiguration
 	{

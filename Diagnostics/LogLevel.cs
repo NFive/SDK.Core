@@ -7,7 +7,7 @@ namespace NFive.SDK.Core.Diagnostics
 	/// <summary>
 	/// Defines available log levels.
 	/// </summary>
-	
+	[PublicAPI]
 	public enum LogLevel
 	{
 		/// <summary>
