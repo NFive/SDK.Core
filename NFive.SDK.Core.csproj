@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net471</TargetFramework>
     <RootNamespace>NFive.SDK.Core</RootNamespace>
+    <AssemblyName>NFive.SDK.Core.net</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
