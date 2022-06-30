@@ -1,10 +1,10 @@
+using JetBrains.Annotations;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace NFive.SDK.Core.Models.Player
 {
-	using JetBrains.Annotations;
-	using System.Collections.Generic;
-	using System.ComponentModel.DataAnnotations;
-	using System.ComponentModel.DataAnnotations.Schema;
-
 	/// <inheritdoc />
 	/// <summary>
 	/// User model representing the player on the server.

@@ -1,10 +1,9 @@
-﻿namespace NFive.SDK.Core.Helpers
-{
-    using JetBrains.Annotations;
-    using System;
-    //using System.Security.Cryptography;
+using System;
+//using System.Security.Cryptography;
 
-    
+
+namespace NFive.SDK.Core.Helpers
+{
 	public static class GuidGenerator
 	{
 		/// <summary>

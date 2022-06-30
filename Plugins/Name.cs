@@ -1,10 +1,10 @@
+using JetBrains.Annotations;
+using Newtonsoft.Json;
+using System;
+
 namespace NFive.SDK.Core.Plugins
 {
-    using JetBrains.Annotations;
-    using Newtonsoft.Json;
-    using System;
-
-    [PublicAPI]
+	[PublicAPI]
 	[Serializable]
     public class Name
 	{

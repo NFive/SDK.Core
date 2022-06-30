@@ -1,7 +1,7 @@
+using JetBrains.Annotations;
+
 namespace NFive.SDK.Core.Controllers
 {
-	using JetBrains.Annotations;
-
 	/// <summary>
 	/// Represents the configuration that is automatically loaded into a <c>ConfigurableController</c>.
 	/// </summary>

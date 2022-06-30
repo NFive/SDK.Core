@@ -1,12 +1,12 @@
+using JetBrains.Annotations;
+using Newtonsoft.Json;
+using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace NFive.SDK.Core.Models.Player
 {
-    using JetBrains.Annotations;
-    using Newtonsoft.Json;
-    using System;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-
-    /// <summary>
+	/// <summary>
 	/// Session model representing a user's connection to the server.
 	/// </summary>
 	[PublicAPI]

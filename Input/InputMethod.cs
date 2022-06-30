@@ -1,7 +1,7 @@
+using JetBrains.Annotations;
+
 namespace NFive.SDK.Core.Input
 {
-	using JetBrains.Annotations;
-
 	/// <summary>
 	/// Represents the available input methods.
 	/// </summary>

@@ -1,7 +1,7 @@
+using JetBrains.Annotations;
+
 namespace NFive.SDK.Core.Helpers
 {
-	using JetBrains.Annotations;
-
 	[PublicAPI]
 	public static class MathHelpers
 	{

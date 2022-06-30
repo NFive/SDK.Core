@@ -1,8 +1,8 @@
+using JetBrains.Annotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace NFive.SDK.Core.Models
 {
-	using System.ComponentModel.DataAnnotations.Schema;
-	using JetBrains.Annotations;
-
 	/// <summary>
 	/// Represents an ARGB (alpha, red, green, blue) color.
 	/// </summary>

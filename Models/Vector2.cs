@@ -1,9 +1,9 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using JetBrains.Annotations;
+
 namespace NFive.SDK.Core.Models
 {
-	using System.ComponentModel.DataAnnotations;
-	using System.ComponentModel.DataAnnotations.Schema;
-	using JetBrains.Annotations;
-
 	/// <summary>
 	/// Represents a position in 2D space.
 	/// </summary>

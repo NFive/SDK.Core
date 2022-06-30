@@ -1,8 +1,8 @@
+using JetBrains.Annotations;
+using System;
+
 namespace NFive.SDK.Core.Configuration
 {
-	using JetBrains.Annotations;
-	using System;
-
 	[PublicAPI]
 	public class SteamId
 	{

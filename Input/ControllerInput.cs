@@ -1,7 +1,7 @@
+using JetBrains.Annotations;
+
 namespace NFive.SDK.Core.Input
 {
-	using JetBrains.Annotations;
-
 	/// <summary>
 	/// Represents the inputs on a Xbox One controller as supported by GTA.
 	/// See <a href="https://support.xbox.com/en-US/xbox-one/accessories/xbox-one-wireless-controller">Xbox support</a> for button naming.

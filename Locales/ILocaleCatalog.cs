@@ -1,9 +1,9 @@
+using JetBrains.Annotations;
+using System.Globalization;
+
 namespace NFive.SDK.Core.Locales
 {
-    using JetBrains.Annotations;
-    using System.Globalization;
-
-    [PublicAPI]
+	[PublicAPI]
 	public interface ILocaleCatalog
 	{
 		/// <summary>Gets the catalog culture.</summary>

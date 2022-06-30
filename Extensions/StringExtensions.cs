@@ -1,11 +1,11 @@
+using JetBrains.Annotations;
+using System.Globalization;
+using System.Linq;
+using System.Text.RegularExpressions;
+
 namespace NFive.SDK.Core.Extensions
 {
-    using JetBrains.Annotations;
-    using System.Globalization;
-    using System.Linq;
-    using System.Text.RegularExpressions;
-
-    [PublicAPI]
+	[PublicAPI]
 	public static class StringExtensions
 	{
 		public static string Pluralize(this string str, int value, string extension = "s", CultureInfo culture = null)

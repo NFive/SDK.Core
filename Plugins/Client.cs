@@ -1,10 +1,10 @@
+using JetBrains.Annotations;
+using System;
+using System.Collections.Generic;
+
 namespace NFive.SDK.Core.Plugins
 {
-    using JetBrains.Annotations;
-    using System;
-	using System.Collections.Generic;
-
-    [PublicAPI]
+	[PublicAPI]
 	[Serializable]
 	public class Client
 	{

@@ -1,10 +1,10 @@
+using JetBrains.Annotations;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+
 namespace NFive.SDK.Core.Configuration
 {
-	using JetBrains.Annotations;
-	using System;
-	using System.Collections.Generic;
-	using System.Globalization;
-
 	[PublicAPI]
 	public class LocaleConfiguration
 	{

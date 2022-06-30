@@ -1,7 +1,7 @@
+using JetBrains.Annotations;
+
 namespace NFive.SDK.Core.Input
 {
-	using JetBrains.Annotations;
-
 	[PublicAPI]
 	public enum KeyCode
 	{

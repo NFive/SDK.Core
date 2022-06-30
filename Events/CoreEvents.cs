@@ -1,7 +1,7 @@
+using JetBrains.Annotations;
+
 namespace NFive.SDK.Core.Events
 {
-	using JetBrains.Annotations;
-
 	/// <summary>
 	/// Core NFive events.
 	/// </summary>

@@ -1,9 +1,9 @@
+using JetBrains.Annotations;
+using System;
+
 namespace NFive.SDK.Core.Plugins
 {
-    using JetBrains.Annotations;
-    using System;
-
-    [PublicAPI]
+	[PublicAPI]
 	[Serializable]
     public class VersionRange
 	{

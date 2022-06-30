@@ -1,9 +1,9 @@
+using JetBrains.Annotations;
+using NFive.SDK.Core.Models;
+using System;
+
 namespace NFive.SDK.Core.Extensions
 {
-	using System;
-	using JetBrains.Annotations;
-	using NFive.SDK.Core.Models;
-
 	[PublicAPI]
 	public static class Vector3Extensions
 	{

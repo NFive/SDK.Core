@@ -1,7 +1,6 @@
-﻿namespace NFive.SDK.Core
+namespace NFive.SDK.Core
 {
-    using JetBrains.Annotations;
-    using System;
+	using System;
 
 	
 	[AttributeUsage(AttributeTargets.Assembly)]
