@@ -1,13 +1,10 @@
-using System;
 using JetBrains.Annotations;
+using System;
 
 namespace NFive.SDK.Core.Plugins
 {
-	/// <summary>
-	/// Represents a semantic version number.
-	/// </summary>
-	[Serializable]
 	[PublicAPI]
+	[Serializable]
 	public class Version
 	{
 		/// <summary>

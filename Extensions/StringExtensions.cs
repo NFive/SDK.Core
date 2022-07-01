@@ -1,7 +1,7 @@
+using JetBrains.Annotations;
 using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
-using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Extensions
 {

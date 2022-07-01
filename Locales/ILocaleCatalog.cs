@@ -1,11 +1,8 @@
-using System.Globalization;
 using JetBrains.Annotations;
+using System.Globalization;
 
 namespace NFive.SDK.Core.Locales
 {
-	/// <summary>
-	/// A GNU gettext locale catalog for a given culture.
-	/// </summary>
 	[PublicAPI]
 	public interface ILocaleCatalog
 	{
