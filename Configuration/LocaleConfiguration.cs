@@ -1,7 +1,7 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using JetBrains.Annotations;
 
 namespace NFive.SDK.Core.Configuration
 {

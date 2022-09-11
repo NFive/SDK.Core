@@ -1,13 +1,8 @@
-using System;
-using JetBrains.Annotations;
-
 namespace NFive.SDK.Core
 {
-	/// <inheritdoc />
-	/// <summary>
-	/// Specifies the SDK version number the assembly was built against.
-	/// </summary>
-	[PublicAPI]
+	using System;
+
+	
 	[AttributeUsage(AttributeTargets.Assembly)]
 	public class PluginAttribute : Attribute
 	{
@@ -26,4 +21,5 @@ namespace NFive.SDK.Core
 			this.Target = target;
 		}
 	}
+
 }

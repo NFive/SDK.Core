@@ -1,5 +1,5 @@
-using System.ComponentModel.DataAnnotations;
 using JetBrains.Annotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace NFive.SDK.Core.Models
 {
