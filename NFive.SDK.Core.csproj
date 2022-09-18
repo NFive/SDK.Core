@@ -5,6 +5,17 @@
     <RootNamespace>NFive.SDK.Core</RootNamespace>
     <AssemblyName>NFive.SDK.Core.net</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+    <PackageId>NFive.SDK.Core</PackageId>
+    <Authors>NFive</Authors>
+    <Owners>NFive</Owners>
+    <PackageLicenseExpression>LGPL-3.0-only</PackageLicenseExpression>
+    <Tags>nfive fivem gtav</Tags>
+    <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
+    <ProjectUrl>https://github.com/NFive/SDK.Core</ProjectUrl>
+    <RepositoryUrl>https://github.com/NFive/SDK.Core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Description>NFive Core SDK for plugins</Description>
   </PropertyGroup>
 
   <ItemGroup>
