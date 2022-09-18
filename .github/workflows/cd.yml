@@ -80,3 +80,10 @@ jobs:
           asset_path: .\${{ env.ZipName }}
           asset_name: ${{ env.ZipName }}
           asset_content_type: application/zip
+      
+      - name: Pack
+        run: dotnet pack NFive.SDK.Core.csproj -p:PackageVersion=${{ env.SEMVER }} --configuration Release
+      
+      # Push package to nuget.org
+      - name: Push nuget package
+        run: dotnet nuget push **/*.nupkg --skip-duplicate --source "https://api.nuget.org/v3/index.json" --api-key ${{secrets.nuget_api_key}}
