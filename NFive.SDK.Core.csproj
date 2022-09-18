@@ -1,93 +1,19 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C1DE80C7-579E-4D48-AAB8-37F5C1484F86}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFramework>net471</TargetFramework>
     <RootNamespace>NFive.SDK.Core</RootNamespace>
     <AssemblyName>NFive.SDK.Core.net</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <AllowedReferenceRelatedFileExtensions>
-      .allowedextension
-    </AllowedReferenceRelatedFileExtensions>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>false</DebugSymbols>
-    <DebugType>none</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugSymbols>false</DebugSymbols>
-    <DebugType>none</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="JetBrains.Annotations, Version=2021.2.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
-      <HintPath>packages\JetBrains.Annotations.2021.2.0\lib\net20\JetBrains.Annotations.dll</HintPath>
-      <Private>False</Private>
+	<PackageReference Include="JetBrains.Annotations" Version="2022.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" ExcludeAssets="Compile" GeneratePathProperty="true" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <Reference Include="Newtonsoft.Json">
+	    <HintPath>$(PkgNewtonsoft_Json)\lib\portable-net40+sl5+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Configuration\LocaleConfiguration.cs" />
-    <Compile Include="Configuration\SteamId.cs" />
-    <Compile Include="Controllers\ControllerConfiguration.cs" />
-    <Compile Include="Controllers\IControllerConfiguration.cs" />
-    <Compile Include="Diagnostics\ILogger.cs" />
-    <Compile Include="Diagnostics\LogLevel.cs" />
-    <Compile Include="Extensions\StringExtensions.cs" />
-    <Compile Include="Extensions\NumericExtensions.cs" />
-    <Compile Include="Extensions\PositionExtensions.cs" />
-    <Compile Include="Extensions\Vector2Extensions.cs" />
-    <Compile Include="Extensions\Vector3Extensions.cs" />
-    <Compile Include="Helpers\GuidGenerator.cs" />
-    <Compile Include="Helpers\MathHelpers.cs" />
-    <Compile Include="Input\ControllerInput.cs" />
-    <Compile Include="Input\InputMethod.cs" />
-    <Compile Include="Input\InputModifier.cs" />
-    <Compile Include="Input\InputControl.cs" />
-    <Compile Include="Input\KeyCode.cs" />
-    <Compile Include="Locales\ILocaleCatalog.cs" />
-    <Compile Include="Models\Audio\RadioStation.cs" />
-    <Compile Include="Models\Color.cs" />
-    <Compile Include="Models\IdentityModel.cs" />
-    <Compile Include="Models\IIdentityModel.cs" />
-    <Compile Include="Models\Player\Session.cs" />
-    <Compile Include="Models\Player\User.cs" />
-    <Compile Include="Models\Position.cs" />
-    <Compile Include="Models\Vector2.cs" />
-    <Compile Include="Models\Vector3.cs" />
-    <Compile Include="PluginAttribute.cs" />
-    <Compile Include="Plugins\Client.cs" />
-    <Compile Include="Plugins\Plugin.cs" />
-    <Compile Include="Plugins\Name.cs" />
-    <Compile Include="Plugins\Repository.cs" />
-    <Compile Include="Plugins\Server.cs" />
-    <Compile Include="Plugins\Version.cs" />
-    <Compile Include="Plugins\VersionRange.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Events\CoreEvents.cs" />
-    <Compile Include="Utilities\Serializer.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>
