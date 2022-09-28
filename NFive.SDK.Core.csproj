@@ -20,7 +20,7 @@
 
   <ItemGroup>
 	  <PackageReference Include="JetBrains.Annotations" Version="2022.1.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" ExcludeAssets="Compile" GeneratePathProperty="true" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" ExcludeAssets="Compile" GeneratePathProperty="true" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <Reference Include="Newtonsoft.Json">
 	    <HintPath>$(PkgNewtonsoft_Json)\lib\portable-net40+sl5+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
