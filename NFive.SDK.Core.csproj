@@ -12,11 +12,21 @@
     <PackageLicenseExpression>LGPL-3.0-only</PackageLicenseExpression>
     <Tags>nfive fivem gtav</Tags>
     <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
-    <ProjectUrl>https://github.com/NFive/SDK.Core</ProjectUrl>
     <RepositoryUrl>https://github.com/NFive/SDK.Core</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Description>NFive Core SDK for plugins</Description>
+    <Title>NFive.SDK.Core</Title>
+    <PackageProjectUrl>https://github.com/NFive</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageTags>nfive fivem gtav</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="images\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
 	  <PackageReference Include="JetBrains.Annotations" Version="2022.1.0" />
