@@ -24,7 +24,7 @@ namespace NFive.SDK.Core.Models
 		/// <value>
 		/// The id.
 		/// </value>
-		public new int Id { get; set; }
+		public new uint Id { get; set; }
 
 		/// <summary>
 		/// Gets or sets a value indicating whether game world population is enabled inside this bucket.
