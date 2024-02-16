@@ -76,25 +76,6 @@ namespace NFive.SDK.Core.Models.Player
 		public int Handle { get; set; }
 
 		/// <summary>
-		/// Gets or sets routing bucket id.
-		/// </summary>
-		/// <value>
-		/// The routing bucket id.
-		/// </value>
-		[Required]
-		[ForeignKey("RoutingBucket")]
-		public int RoutingBucketId { get; set; }
-
-		/// <summary>
-		/// Gets or sets the routing bucket which this session belongs to.
-		/// </summary>
-		/// <value>
-		/// The routing bucket.
-		/// </value>
-		[JsonIgnore]
-		public virtual RoutingBucket RoutingBucket { get; set; }
-
-		/// <summary>
 		/// Gets or sets the user identifier.
 		/// </summary>
 		/// <value>
