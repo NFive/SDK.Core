@@ -16,7 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       semVer: ${{ steps.gitversion.outputs.semVer }}
-      assemblySemVer: ${{ steps.gitversion.outputs.assemblySemVer }}
 
     steps:
       - uses: actions/checkout@v4
@@ -34,14 +33,12 @@ jobs:
         with:
           useConfigFile: true
           configFilePath: ./.github/version.yml
-          updateAssemblyInfo: true
 
   build:
     runs-on: windows-latest
     needs: calculate-version
     env:
       SEMVER: ${{ needs.calculate-version.outputs.semVer }}
-      ASSEMBLYSEMVER: ${{ needs.calculate-version.outputs.assemblySemVer }}
 
     steps:
       - uses: actions/checkout@v4
@@ -53,7 +50,7 @@ jobs:
         run: nuget restore NFive.SDK.Core.sln
 
       - name: Build the solution
-        run: dotnet build -c Release -o Build /p:Version=${{env.ASSEMBLYSEMVER}} NFive.SDK.Core.sln
+        run: dotnet build -c Release -o Build /p:Version=${{env.SEMVER}} NFive.SDK.Core.sln
 
       - name: Attach Zip as build artifact
         uses: actions/upload-artifact@v4
