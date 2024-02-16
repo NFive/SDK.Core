@@ -34,6 +34,8 @@ jobs:
         with:
           useConfigFile: true
           configFilePath: ./.github/version.yml
+          updateAssemblyInfo: true
+          updateAssemblyInfoFilename: true
 
   build:
     runs-on: windows-latest
